@@ -18,7 +18,7 @@
           <button
             @click="toggleMobileMenu"
             class="md:hidden flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-            :aria-expanded="isMobileMenuOpen.toString()"
+            :aria-expanded="isMobileMenuOpen"
             aria-controls="mobile-menu"
             aria-label="Przełącz menu główne"
           >
