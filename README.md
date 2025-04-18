@@ -1,29 +1,41 @@
+
 # 🎬 Movie App – Vue 3 App powered by TMDB API
 
-A modern and responsive movie browsing application built with Vue 3, TypeScript, and Tailwind CSS.  
-It integrates with [The Movie Database API](https://developer.themoviedb.org/) to fetch real-time movie data, and provides a clean user experience for discovering and managing your favorite films.
+A modern and responsive movie browsing application built from scratch with Vue 3, TypeScript, and Tailwind CSS.  
+The app integrates with The Movie Database (TMDB) API to fetch real-time movie data, offering users an intuitive and performant experience for discovering and managing their favorite films.
 
 ---
 
 ## 🔧 Tech Stack
 
-- **Vue 3** with `<script setup>` Composition API
-- **TypeScript**
-- **Pinia** for state management
-- **Axios** for API communication
-- **Tailwind CSS** for styling
-- **Vite** as the build tool
+- **Vue 3** with `<script setup>` Composition API  
+- **TypeScript** for type safety and improved maintainability  
+- **Pinia** for modular and reactive state management  
+- **Axios** for robust API communication  
+- **Tailwind CSS** for a fully responsive and utility-first design  
+- **Vite** for fast build and development workflow  
 
 ---
 
 ## 📁 Main Features
 
-- 🔍 **Search & Filter** – Search movies by title, filter by genre, sort by rating or popularity
-- 🎞️ **Browse** – View trending, top-rated, and popular movies
-- ❤️ **Favorites** – Save your favorite films using local state (Pinia)
-- 📊 **Statistics** – Overview of favorites: average rating, most common genres, total runtime, etc.
-- 🧭 **Navigation** – Home, Movies, Favorites, Statistics tabs
-- 📱 **Responsive UI** – Tailwind-based layout, optimized for all screen sizes
+- 🔍 **Search & Filter** – Search by title, filter by genre, sort by rating/popularity  
+- 🎞️ **Browse** – Explore trending, top-rated, and popular movies  
+- ❤️ **Favorites** – Mark and manage favorite films using local state (Pinia)  
+- 📊 **Statistics Dashboard** – Insights into favorites: movie ratings, release year breakdown, overall summary  
+- 🧭 **Navigation** – Home, Movies, Favorites, and Statistics views  
+- 📱 **Responsive Design** – Fully optimized for mobile, tablet, and desktop using Tailwind  
+
+---
+
+## 🧠 Key Focus Areas & Challenges Overcome
+
+- **Type-Safe API Integration**: Built typed interfaces for TMDB responses to avoid runtime errors and ensure code reliability.  
+- **Reusable Composables**: Created custom composables for fetching data, managing loading/error states, and handling favorites logic.  
+- **Modular Architecture**: Maintained a clean folder structure and component-based design for better scalability and readability.  
+- **User Experience**: Added loading skeletons and smooth transitions to enhance the app’s interactivity.  
+- **Responsive UI Tuning**: Carefully tuned layout breakpoints and interactions for a seamless experience across all devices.  
+- **API Rate Limit Handling**: Implemented basic rate-limit awareness and retries to gracefully handle TMDB API restrictions.  
 
 ---
 
@@ -33,31 +45,24 @@ To run the project locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/movie-explorer.git
+git clone https://github.com/Kamil678/movie-app.git
 cd movie-app
 
 # 2. Install dependencies
 npm install
 
-# 3. Copy the example environment file and provide your TMDB API key
+# 3. Provide your TMDB API key
 cp .env.dist .env
 
-# 4. Run the app
+# 4. Start the development server
 npm run dev
 ```
 
 ---
 
-## 🧠 What I focused on
+## 🔗 Live Demo & Repository
 
-- Modular component structure
-- Type-safe API integration
-- Error handling and loading states
-- Reusable composables
-- Clean, readable, well-structured code
+- **🌐 Live App**: [https://dazzling-valkyrie-c0fb6c.netlify.app/](https://dazzling-valkyrie-c0fb6c.netlify.app/)
+- **📂 GitHub Repo**: [https://github.com/Kamil678/movie-app](https://github.com/Kamil678/movie-app)
 
 ---
-
-## 📌 Live Demo
-
-**🔗 https://dazzling-valkyrie-c0fb6c.netlify.app/**
